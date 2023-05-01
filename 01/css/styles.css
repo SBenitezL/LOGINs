@@ -1,0 +1,44 @@
+*{
+    font-family: 'Poppins', sons-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/samuel-ferrara-1527pjeb6jg-unsplash.jpg);
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tittle-action{
+    color: rgb(187, 82, 12);
+}
+.main-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 15%;
+    display: flex;
+}
+.sign-up-container{
+    display: block;
+    background-color: white;
+}
+.action-1{
+    display: none;
+}
+.action-2{
+    display: flex;
+}
+.question{
+    color: white;
+    display: block;
+    width: 33%;
+}
+.login-container{
+    display: block;
+    background-color: white;
+    width: 33%;
+}
