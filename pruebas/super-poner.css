@@ -1,0 +1,17 @@
+.inferior {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-start; /* Centra el contenido a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    background-color: aquamarine;
+  }
+  
+  .superior {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    text-align: right; /* Centra el contenido a la derecha */
+  }
+  

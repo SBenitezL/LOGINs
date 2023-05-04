@@ -19,12 +19,19 @@ main{
 }
 .main-container{
     background-color: rgba(0, 0, 0, 0.6);
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
+    position: relative;
+    width: 60%;
+    height: 350px;
 }
+
 .sign-up-container{
     display: block;
     background-color: white;
+    z-index: 2;
+    position: absolute;
+    width: 20%;
 }
 .action-1{
     display: none;
@@ -35,10 +42,41 @@ main{
 .question{
     color: white;
     display: block;
-    width: 33%;
+    position: relative;
+    z-index: 1;
+    width: 35%;
+    text-align: left;
+    margin: 20px;
+    
+    
 }
 .login-container{
     display: block;
     background-color: white;
-    width: 33%;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 40%;
+    margin-right: 40px;   
+}
+.switch{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 15px; /* valor ajustable */
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Agrega transición a todos los cambios */
+    width: 110px;
+}
+.switch:hover{
+    background-color: white;
+  color: black;
+}
+
+.formulario{
+    margin: 30px 20px 25px 40px;
 }
