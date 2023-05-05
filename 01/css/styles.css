@@ -26,29 +26,62 @@ main{
     height: 350px;
 }
 
+#action1{
+    display: none;
+}
+#action1 .question{
+    color: white;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 40%;
+    text-align: left;
+    margin: 50px 0px 30px 50px;
+    right: 0;
+}
+
+#action1 .question h1{
+    font-size: 25px;
+    font-weight: 200;
+}
+#action1 .question p{
+    font-size: 14px;
+    font-weight: 150;
+    margin-top: 15px;
+}
+
 .sign-up-container{
     display: block;
     background-color: white;
+    height: 400px;
     z-index: 2;
     position: absolute;
-    width: 20%;
+    top: -25px;
+    width: 50%;
+    margin-left: 40px; 
 }
-.action-1{
-    display: none;
-}
-.action-2{
+#action2{
     display: flex;
 }
-.question{
+
+#action2 .question{
     color: white;
     display: block;
     position: relative;
     z-index: 1;
-    width: 35%;
+    width: 40%;
     text-align: left;
-    margin: 20px;
-    
-    
+    margin: 50px 30px 30px 50px;
+}
+
+#action2 .question h1{
+    font-size: 25px;
+    font-weight: 200;
+}
+#action2 .question p{
+    font-size: 14px;
+    font-weight: 150;
+    margin-top: 15px;
 }
 .login-container{
     display: block;
@@ -58,19 +91,20 @@ main{
     position: absolute;
     top: -25px;
     right: 0;
-    width: 40%;
+    width: 50%;
     margin-right: 40px;   
 }
 .switch{
     background-color: transparent;
     color: white;
     border: 2px solid white;
-    border-radius: 15px; /* valor ajustable */
+    border-radius: 10px; /* valor ajustable */
     padding: 5px 10px;
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s ease-in-out; /* Agrega transición a todos los cambios */
     width: 110px;
+    margin-top: 30px;
 }
 .switch:hover{
     background-color: white;
@@ -78,5 +112,47 @@ main{
 }
 
 .formulario{
-    margin: 30px 20px 25px 40px;
+    margin: 50px 30px 25px 40px;
+}
+.envio{
+    margin-top:20px;
+}
+.envio a{
+    font-size: 12px;
+    position: relative;
+    color:rgb(221, 215, 206);
+    text-decoration: none;
+}
+.entrada{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.send{
+    background-color: rgb(230, 48, 63);
+    color:white;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Agrega transición a todos los cambios */
+    width: 110px;
+    position: absolute;
+    right: 30px;
+}
+#sign-up{
+    transition: transform 1.5s ease-in-out;
+}
+#sign-up.active{
+    transform: translateX(100%);
+}
+#login{
+    transition: transform 1.5s ease-in-out;
+}
+#login.active{
+    transform: translateX(-100%);
 }
