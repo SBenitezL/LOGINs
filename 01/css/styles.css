@@ -156,3 +156,21 @@ main{
 #login.active{
     transform: translateX(-100%);
 }
+#full-name{
+    background-image: url('../../icons-by-Santiago-Benitez/user.svg');
+    background-repeat: no-repeat; /* Evita la repetición del icono */
+    background-position: right center; /* Colocar el icono en la izquierda centrado */
+    background-size: 20px; /* Ajustar el tamaño del icono */
+}
+#email{
+    background-image: url('../../icons-by-Santiago-Benitez/email.svg');
+    background-repeat: no-repeat; /* Evita la repetición del icono */
+    background-position: right center; /* Colocar el icono en la izquierda centrado */
+    background-size: 20px; /* Ajustar el tamaño del icono */
+}
+#password{
+    background-image: url('../../icons-by-Santiago-Benitez/candado.svg');
+    background-repeat: no-repeat; /* Evita la repetición del icono */
+    background-position: right center; /* Colocar el icono en la izquierda centrado */
+    background-size: 20px; /* Ajustar el tamaño del icono */
+}
