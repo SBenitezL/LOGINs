@@ -22,8 +22,9 @@ main{
     margin-top: 10%;
     display: flex;
     position: relative;
-    width: 60%;
+    width: 800px;
     height: 350px;
+    border-radius: 5px;
 }
 
 #action1{
@@ -34,9 +35,10 @@ main{
     display: block;
     position: absolute;
     z-index: 1;
-    width: 40%;
+    width: 35%;
     text-align: left;
-    margin: 50px 0px 30px 50px;
+    margin: 50px 30px 30px 0px;
+    padding-left: 30px;
     right: 0;
 }
 
@@ -50,16 +52,6 @@ main{
     margin-top: 15px;
 }
 
-.sign-up-container{
-    display: block;
-    background-color: white;
-    height: 400px;
-    z-index: 2;
-    position: absolute;
-    top: -25px;
-    width: 50%;
-    margin-left: 40px; 
-}
 #action2{
     display: flex;
 }
@@ -69,7 +61,7 @@ main{
     display: block;
     position: relative;
     z-index: 1;
-    width: 40%;
+    width: 35%;
     text-align: left;
     margin: 50px 30px 30px 50px;
 }
@@ -83,17 +75,7 @@ main{
     font-weight: 150;
     margin-top: 15px;
 }
-.login-container{
-    display: block;
-    background-color: white;
-    height: 400px;
-    z-index: 2;
-    position: absolute;
-    top: -25px;
-    right: 0;
-    width: 50%;
-    margin-right: 40px;   
-}
+
 .switch{
     background-color: transparent;
     color: white;
@@ -145,17 +127,57 @@ main{
     right: 30px;
 }
 #sign-up{
-    transition: transform 1.5s ease-in-out;
+    display: block;
+    background-color: white;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    top: -25px;
+    width: 50%;
+    left: 0;
+    margin-left: 40px; 
+    transition: transform 0.3s ease-in-out;
+    animation: vibracion 0.3s ease-in-out;
+    border-radius: 5px;
 }
 #sign-up.active{
-    transform: translateX(100%);
+    transform: translateX(80%);
 }
+@keyframes vibracion {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(3px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 #login{
-    transition: transform 1.5s ease-in-out;
+    display: block;
+    background-color: white;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: 50%;
+    margin-right: 40px;   
+    transition: transform 0.5s ease-in-out;
+    animation: vibracion 0.3s ease-in-out;
+    border-radius: 5px;
 }
 #login.active{
-    transform: translateX(-100%);
+    transform: translateX(-80%);
 }
+
 #full-name{
     background-image: url('../../icons-by-Santiago-Benitez/user.svg');
     background-repeat: no-repeat; /* Evita la repetición del icono */
